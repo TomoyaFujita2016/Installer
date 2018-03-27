@@ -3,6 +3,7 @@ git clone https://github.com/yyuu/pyenv.git ~/.pyenv
 echo -e 'export PYENV_ROOT=$HOME/.pyenv\nexport PATH=$PYENV_ROOT/bin:$PATH\neval "$(pyenv init -)"' >> ~/.bashrc
 git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
 echo -e 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
+echo eval "$(pyenv init -)" >> ~/.bashrc
 source ~/.bashrc
 sudo apt-get install -y zlib1g-dev
 pyenv install 3.6.4
