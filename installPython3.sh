@@ -6,3 +6,4 @@ source ~/.bashrc
 sudo apt-get install -y zlib1g-dev
 pyenv install 3.6.4
 echo -e 'If you want to make virtual python environment, type "pyenv virtualenv 3.6.4 [virtual name]"'
+echo -e 'If you get error, make sure you type this command.\nsudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \nlibreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \nxz-utils tk-dev'
