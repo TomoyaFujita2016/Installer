@@ -10,11 +10,11 @@ eval "$(pyenv init -)"
 echo 'export PYENV_ROOT=$HOME/.pyenv'
 echo 'export PATH=$PYENV_ROOT/bin:$PATH'
 echo 'eval "$(pyenv init -)"'
-} >> ~/.bashrc
+} >> ~/.bash_profile
 
 git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
 eval "$(pyenv virtualenv-init -)"
-echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
+echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bash_profile
 sudo apt-get install -y zlib1g-dev
 pyenv install 3.9.7
 echo -e '\033[1;39mIf you want to make virtual python environment, type "pyenv virtualenv 3.9.7 [virtual name]"\033[0;39m'
