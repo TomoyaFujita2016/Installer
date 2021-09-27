@@ -9,8 +9,9 @@ eval "$(pyenv init -)"
 { 
 echo 'export PYENV_ROOT=$HOME/.pyenv'
 echo 'export PATH=$PYENV_ROOT/bin:$PATH'
-echo 'eval "$(pyenv init -)"'
+echo 'eval "$(pyenv init --path)"'
 } >> ~/.bash_profile
+echo 'eval "$(pyenv init -)"' >> ~/.bashrc
 
 git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
 eval "$(pyenv virtualenv-init -)"
